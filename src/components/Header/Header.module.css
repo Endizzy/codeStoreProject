@@ -1,0 +1,73 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(25, 24, 37, 0.95); /* 0.8 = 80% непрозрачности */
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #5D9FFF, #8E75FF, #F875AA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    user-select: none;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: white;
+}
+
+.nav__list_item a {
+    transition: color 0.3s ease;
+}
+
+.nav__list_item a:hover {
+    color: #5D9FFF;
+}
+
+/* 👇 Важно: обернули select в отдельный класс */
+.languageSelector select {
+    margin-left: 1rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.codelabPlus {
+    background: linear-gradient(135deg, #fdd835, #f9a825);
+    color: white;
+    padding: 0.5rem 1.25rem;
+    border-radius: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+}
+
+.codelabPlus:hover {
+    background: linear-gradient(135deg, #fbc02d, #f57f17);
+    transform: translateY(-2px);
+    cursor: pointer;
+}
