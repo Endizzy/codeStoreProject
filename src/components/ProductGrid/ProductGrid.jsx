@@ -52,12 +52,12 @@ const ProductGrid = () => {
   return (
       <div>
           <div className={styles.container}>
-              <select className={styles.custom_select}>
-                  <option>Most Popular</option>
-                  <option>Newest First</option>
-                  <option>Most Views</option>
-                  <option>Least Views</option>
-              </select>
+              {/*<select className={styles.custom_select}>*/}
+              {/*    <option>Most Popular</option>*/}
+              {/*    <option>Newest First</option>*/}
+              {/*    <option>Most Views</option>*/}
+              {/*    <option>Least Views</option>*/}
+              {/*</select>*/}
 
               <div className={styles.product_grid}>
                   {products.map((product) => (
@@ -73,11 +73,11 @@ const ProductGrid = () => {
                   ))}
               </div>
 
-              <div className={styles.load_more_container}>
-                  <button className={styles.load_more_button}>
-                      Load More Products
-                  </button>
-              </div>
+              {/*<div className={styles.load_more_container}>*/}
+              {/*    <button className={styles.load_more_button}>*/}
+              {/*        Load More Products*/}
+              {/*    </button>*/}
+              {/*</div>*/}
           </div>
       </div>
   );

@@ -1,0 +1,42 @@
+.scrollerWrapper {
+    margin-top: 30px;
+    overflow: hidden;
+    width: 100%;
+    background-color: black;
+    background: var(--background-main);
+    padding: 2rem 0;
+}
+
+.scroller {
+    display: flex;
+    gap: 1.5rem;
+    animation: scrollLeft 20s linear infinite;
+    width: max-content;
+}
+
+.card {
+    /*background-color: #393636;*/
+    background: linear-gradient(135deg, hsl(267 84% 64%) 0%, hsl(267 84% 54%) 100%);
+    color: black;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    cursor: default;
+}
+
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import styles from "./Header.module.css";
+import Link from "next/link";
 
 const Header = () => {
     const [language, setLanguage] = useState("en");
@@ -27,6 +28,11 @@ const Header = () => {
                         </li>
                         <li className={styles.nav__list_item}>
                             <span className={styles.codelabPlus}>CODELAB+</span>
+                        </li>
+                        <li className={styles.nav__list_item}>
+                            <Link href="/Dashboard">
+                                <span className={styles.nav__list_item}>Dashboard</span>
+                            </Link>
                         </li>
                     </ul>
                 </nav>
