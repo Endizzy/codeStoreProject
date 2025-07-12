@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import styles from './ProductCard.module.css';
 import { Eye } from 'lucide-react';
 
-const ProductCard = ({ id, title, username, views, imageUrl }) => {
+const ProductCard = ({ id, title, username, views, imageUrl, isPremium }) => {
     const router = useRouter();
 
     const handleClick = () => {
@@ -15,6 +15,11 @@ const ProductCard = ({ id, title, username, views, imageUrl }) => {
         <div className={styles.card} onClick={handleClick}>
             <div className={styles.imageWrapper}>
                 <img src={imageUrl} alt={title} className={styles.image} />
+                {isPremium && (
+                    <div className={styles.premiumBadge}>
+                        CODELAB+
+                    </div>
+                )}
             </div>
 
             <div className={styles.content}>

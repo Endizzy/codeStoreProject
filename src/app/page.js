@@ -3,7 +3,7 @@ import LanguageSelector from "@/components/LanguageSelector/LanguageSelector";
 import {allowedDisplayValues} from "next/dist/compiled/@next/font/dist/constants";
 import WelcomeContent from "@/components/WelcomeContent/WelcomeContent";
 import ProductGrid from "@/components/ProductGrid/ProductGrid";
-import Span from "@/components/Span/Span";
+import NewUsersSection from "@/components/NewUsersSection/NewUsersSection";
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
             <ProductGrid />
         </div>
         <div>
-            <Span />
+            <NewUsersSection />
         </div>
     </div>
   );

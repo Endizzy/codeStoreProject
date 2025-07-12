@@ -14,17 +14,21 @@ const Header = () => {
     return (
         <header className={styles.header}>
             <div className={styles.container}>
-                <a href="#" className={styles.logo}>
+                <a href="/" className={styles.logo}>
                     CODELAB
                 </a>
 
                 <nav>
                     <ul className={styles.nav__list}>
                         <li className={styles.nav__list_item}>
-                            <a href="#">HOME</a>
+                            <Link href="/">
+                                HOME
+                            </Link>
                         </li>
                         <li className={styles.nav__list_item}>
-                            <a href="#">LOGIN</a>
+                            <Link href="/Login">
+                                LOGIN
+                            </Link>
                         </li>
                         <li className={styles.nav__list_item}>
                             <span className={styles.codelabPlus}>CODELAB+</span>

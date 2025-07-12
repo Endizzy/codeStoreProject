@@ -7,6 +7,7 @@
   font-family: 'Exo 2', sans-serif;
   font-optical-sizing: auto;
   color: white;
+  background-color: #191825;
   font-weight: 600;
   font-style: normal;
   --gradient-hero: linear-gradient(135deg, hsl(267 84% 64%) 0%, hsl(267 84% 54%) 100%);

@@ -1,0 +1,143 @@
+.container {
+    overflow: hidden;
+    max-width: 400px;
+    margin: 130px auto;
+    padding: 30px;
+    background: #181818;
+    border-radius: 2px;
+    border: 1px solid #a855f7;
+    /*box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);*/
+    color: #eee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    background: linear-gradient(to right, #a855f7, #ec4899); /* твой градиент */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; /* для Firefox */
+    color: transparent;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #ccc;
+}
+
+.input {
+    /*margin-left: 10px;*/
+    margin-top: 6px;
+    padding: 10px 14px;
+    font-size: 1rem;
+    border-radius: 2px;
+    border: 1.5px solid #444;
+    background-color: #222;
+    color: #eee;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input:focus {
+    border-color: #a855f7;
+    /*box-shadow: 0 0 5px #a855f7;*/
+}
+
+.button {
+    padding: 12px 0;
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+    background: var(--gradient-hero);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: color 0.4s ease;
+}
+
+.button:hover:not(:disabled) {
+    /*color: white;*/
+}
+
+.button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.messageSuccess {
+    margin-top: 20px;
+    color: #4caf50;
+    font-weight: 600;
+    text-align: center;
+}
+
+.messageError {
+    margin-top: 20px;
+    color: #ff5252;
+    font-weight: 600;
+    text-align: center;
+}
+
+.loginContent {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.forgotPassword {
+    /*background: linear-gradient(to right, #a855f7, #ec4899);*/
+    /*-webkit-background-clip: text;*/
+    /*-webkit-text-fill-color: transparent;*/
+    /*background-clip: text; !* for firefox *!*/
+    /*color: transparent;*/
+    color: white;
+    background: var(--gradient-hero);
+    padding: 20px;
+    border: none;
+    border-radius: 2px;
+    width: 160px;
+    /*font-size: 1.1rem;*/
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.createAccount {
+    color: white;
+    background: var(--gradient-hero);
+    padding: 20px;
+    border: none;
+    border-radius: 2px;
+    width: 160px;
+    /*font-size: 1.1rem;*/
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Общий стиль для всех кнопок */
+.button,
+.forgotPassword,
+.createAccount {
+    background: linear-gradient(to right, #a855f7, #ec4899);
+    background-size: 200% auto; /* увеличиваем фон по горизонтали */
+    background-position: left center;
+    transition: background-position 0.5s ease;
+}
+
+.button:hover:not(:disabled),
+.forgotPassword:hover,
+.createAccount:hover {
+    background-position: right center; /* сдвигаем градиент вправо */
+}
