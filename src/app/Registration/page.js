@@ -25,7 +25,7 @@ const Registration = () => {
         setMessage(null);
 
         try {
-            const res = await fetch('http://localhost/NextJS-php-api-/php-api/registration.php', {  // путь к твоему API
+            const res = await fetch('http://localhost/codestorephp/codeStoreProject/php-api/registration.php', {  // путь к твоему API
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(form),

@@ -26,7 +26,7 @@ const Login = () => {
         setMessage(null);
 
         try {
-            const res = await fetch('http://localhost/NextJS-php-api-/php-api/login.php', {
+            const res = await fetch('http://localhost/codestorephp/codeStoreProject/php-api/login.php', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(form),
@@ -38,7 +38,7 @@ const Login = () => {
                 localStorage.setItem('token', data.token); // сохраняем токен
                 setMessage({ type: 'success', text: 'Вы успешно вошли!' });
                 setForm({ email: '', password: '' });
-                router.push('/home');
+                router.push('/Dashboard');
             } else {
                 setMessage({ type: 'error', text: data.message || 'Ошибка авторизации' });
             }
