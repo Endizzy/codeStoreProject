@@ -3,6 +3,7 @@
 :root {
   /*--background: #191825;*/
   /*--foreground: #191825;*/
+  --header-height: 140px;
   --background-main: background-color #191825;
   font-family: 'Exo 2', sans-serif;
   font-optical-sizing: auto;

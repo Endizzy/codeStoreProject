@@ -31,7 +31,9 @@ const Header = () => {
                             </Link>
                         </li>
                         <li className={styles.nav__list_item}>
-                            <span className={styles.codelabPlus}>CODELAB+</span>
+                            <Link href="/Codelab">
+                                <span className={styles.codelabPlus}>CODELAB+</span>
+                            </Link>
                         </li>
                         <li className={styles.nav__list_item}>
                             <Link href="/Dashboard">
