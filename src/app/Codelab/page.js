@@ -36,7 +36,7 @@ const Codelab = () => {
             <div className={styles.container}>
                 <div className={styles.cardWrapper}>
                     <h1 className={styles.title}>Unlock New Experiences </h1>
-                    <h1 className={styles.title}>WITH CODELAB+</h1>
+                    <h1 className={styles.title}><span className={styles.codelabPlus}>CODELAB+</span></h1>
                     <div className={styles.grid}>
                         {cards.map((card, index) => (
                             <div key={index} className={styles.flipCard}>

@@ -18,7 +18,8 @@
     /*background-color: #393636;*/
     background: linear-gradient(135deg, hsl(267 84% 64%) 0%, hsl(267 84% 54%) 100%);
     color: white;
-    padding: 1rem 2rem;
+    padding: 1.10rem 2.10rem;
+    margin: 10px;
     border-radius: 1rem;
     font-weight: 600;
     font-size: 1.2rem;
@@ -32,7 +33,13 @@
     cursor: default;
 }
 
-@keyframes scrollLeft {
+.track {
+    display: flex;
+    width: fit-content;
+    animation: scroll 50s linear infinite;
+}
+
+@keyframes scroll {
     0% {
         transform: translateX(0%);
     }
@@ -40,3 +47,4 @@
         transform: translateX(-50%);
     }
 }
+

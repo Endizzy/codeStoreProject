@@ -4,8 +4,12 @@
 import React, {useEffect, useState} from 'react';
 import styles from './Registration.module.css';
 import Header from "@/components/Header/Header";
+import { useRouter } from 'next/navigation';
 
 const Registration = () => {
+
+    const router = useRouter();
+
     const [form, setForm] = useState({
         email: '',
         password: '',
@@ -35,6 +39,7 @@ const Registration = () => {
             if (data.success) {
                 setMessage({ type: 'success', text: 'Регистрация прошла успешно!' });
                 setForm({ email: '', password: '', nickname: '' });
+                router.push("/Login")
             } else {
                 setMessage({ type: 'error', text: data.message || 'Ошибка регистрации' });
             }

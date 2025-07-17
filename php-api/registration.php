@@ -58,7 +58,7 @@ try {
 
     // Хешируем пароль
     $hashedPassword = password_hash($password, PASSWORD_DEFAULT);
-    $nameTag = '@' . $nickname;
+    $nameTag = '@' . explode('@', $email)[0];
 
 
     // Вставляем нового пользователя
@@ -68,6 +68,7 @@ try {
 
 
     echo json_encode(['success' => true, 'message' => 'Пользователь успешно зарегистрирован']);
+    exit;
 } catch (Exception $e) {
     http_response_code(500);
     echo json_encode(['success' => false, 'message' => 'Ошибка сервера: ' . $e->getMessage()]);

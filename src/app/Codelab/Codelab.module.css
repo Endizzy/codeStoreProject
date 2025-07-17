@@ -25,7 +25,8 @@
 }
 
 .title {
-    font-size: 2rem;
+    /*font-size: 2rem;*/
+    font-size: 26px;
     margin-bottom: 2rem;
 }
 
@@ -95,7 +96,7 @@
     background: rgba(255, 255, 255, 0.02);
     max-width: 800px;
     border-radius: 20px;
-    /*padding: 1rem;*/
+    padding: 2px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -125,7 +126,7 @@
     color: white;
     background: var(--gradient-hero);
     border: none;
-    border-radius: 2px;
+    border-radius: 10px;
     cursor: pointer;
     background: linear-gradient(to right, #a855f7, #ec4899);
     background-size: 200% auto; /* увеличиваем фон по горизонтали */
@@ -135,4 +136,22 @@
 
 .contact__button:hover {
     background-position: right center;
+}
+
+.codelabPlus {
+    background: linear-gradient(135deg, #fdd835, #f9a825);
+    color: white;
+    padding: 0.5rem 1.25rem;
+    border-radius: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+}
+
+.codelabPlus:hover {
+    background: linear-gradient(135deg, #fbc02d, #f57f17);
+    transform: translateY(-2px);
+    cursor: default;
 }
