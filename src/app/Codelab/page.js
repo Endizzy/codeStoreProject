@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from "@/components/Header/Header";
 import styles from "./Codelab.module.css";
+import Link from "next/link";
 
 const Codelab = () => {
     const cards = [
@@ -59,7 +60,9 @@ const Codelab = () => {
                     </div>
                     <hr className={styles.hrVertical}/>
                     <div className="right__side">
-                        <button className={styles.contact__button}>Contact Us</button>
+                        <Link href="/Contact">
+                            <button className={styles.contact__button}>Contact Us</button>
+                        </Link>
                     </div>
                 </div>
             </div>
