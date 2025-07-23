@@ -11,12 +11,12 @@ const Contact = () => {
                 <div className={styles.container}>
                     <div className={styles.cardTitle}>
                         <h1 className={styles.title}>Contact Us</h1>
-                        <p className={styles.desc}>Drop us a line and we'll be in touch.</p>
+                        <p className={styles.desc}>Drop us a line and we&#39;ll be in touch.</p>
                     </div>
                     <div className={styles.cardWrapper}>
                         <div className={styles.contactWelcome}>
-                            <h1 className={styles.title}>Get in Touch</h1>
-                            <p className={styles.desc}>We'd love to hear from you. Fill out the form below and we'll respond as soon as possible.</p>
+                            <p className={styles.desc}>Drop us a line and we&#39;ll be in touch.</p>
+                            <p className={styles.desc}>We&#39;d love to hear from you. Fill out the form below and we&#39;ll respond as soon as possible.</p>
                         </div>
                         <form className={styles.form}>
                             <input type="text" placeholder="Your name" className={styles.input} required />
