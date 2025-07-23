@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { CodeEditor } from "@/components/CodeEditor/CodeEditor";
+import { CodeEditor } from "../../components/CodeEditor/CodeEditor";
 import styles from "./Editor.module.css";
-import Sidebar from "@/components/Sidebar/Sidebar";
+import Sidebar from "../../components/Sidebar/Sidebar";
 
 export default function HomePage() {
     const [code, setCode] = useState(`<!DOCTYPE html>

@@ -14,14 +14,14 @@ const Header = () => {
     return (
         <header className={styles.header}>
             <div className={styles.container}>
-                <a href="/" className={styles.logo}>
+                <a href="/frontend/public" className={styles.logo}>
                     CODELAB
                 </a>
 
                 <nav>
                     <ul className={styles.nav__list}>
                         <li className={styles.nav__list_item}>
-                            <Link href="/">
+                            <Link href="/frontend/public">
                                 HOME
                             </Link>
                         </li>

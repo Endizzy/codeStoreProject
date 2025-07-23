@@ -3,7 +3,7 @@
 import styles from './Dashboard.module.css';
 import Sidebar from '../../components/Sidebar/Sidebar';
 import React, { useEffect, useState } from "react";
-import LoadingSpinner from "@/components/LoadingSpinner/LoadingSpinner";
+import LoadingSpinner from "../../components/LoadingSpinner/LoadingSpinner";
 import { useRouter } from "next/navigation";
 
 export default function DashboardPage() {

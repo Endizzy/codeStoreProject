@@ -3,7 +3,7 @@
 
 import React, {useEffect, useState} from 'react';
 import styles from './Registration.module.css';
-import Header from "@/components/Header/Header";
+import Header from "../../components/Header/Header";
 import { useRouter } from 'next/navigation';
 
 const Registration = () => {

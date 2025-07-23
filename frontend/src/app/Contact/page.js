@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./Contact.module.css";
-import Sidebar from "@/components/Sidebar/Sidebar";
+import Sidebar from "../../components/Sidebar/Sidebar";
 import { Mail } from 'lucide-react';
 
 const Contact = () => {

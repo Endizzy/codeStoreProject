@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import styles from './ProductGrid.module.css';
-import ProductCard from "@/components/ProductCard/ProductCard";
+import ProductCard from "../ProductCard/ProductCard";
 
 const PAGE_SIZE = 6; // Кол-во карточек на одной странице
 

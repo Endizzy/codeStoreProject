@@ -3,7 +3,7 @@
 import React, {useEffect, useState} from 'react';
 import {useRouter} from "next/navigation";
 import styles from "./Login.module.css"
-import Header from "@/components/Header/Header";
+import Header from "../../components/Header/Header";
 import Link from "next/link";
 
 const Login = () => {
