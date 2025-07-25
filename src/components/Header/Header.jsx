@@ -20,14 +20,14 @@ const Header = () => {
     return (
         <header className={styles.header}>
             <div className={styles.container}>
-                <a href="/" className={styles.logo}>
+                <a href="/codeStoreProject/public" className={styles.logo}>
                     CODELAB
                 </a>
 
                 <nav className={`${styles.nav} ${menuOpen ? styles.open : ""}`}>
                     <ul className={styles.nav__list}>
                         <li className={styles.nav__list_item}>
-                            <Link href="/" onClick={toggleMenu}>HOME</Link>
+                            <Link href="/codeStoreProject/public" onClick={toggleMenu}>HOME</Link>
                         </li>
                         <li className={styles.nav__list_item}>
                             <Link href="/Login" onClick={toggleMenu}>LOGIN</Link>

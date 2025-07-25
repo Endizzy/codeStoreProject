@@ -2,7 +2,7 @@
     "name": "vito6ha/code-store-project",
     "autoload": {
         "psr-4": {
-            "Vito6ha\\CodeStoreProject\\": "frontend/src/"
+            "Vito6ha\\CodeStoreProject\\": "src/"
         }
     },
     "authors": [
