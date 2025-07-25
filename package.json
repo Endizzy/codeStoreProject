@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "../node_modules/.bin/next build",
-    "start": "../node_modules/.bin/next start",
-    "lint": "../node_modules/.bin/next lint"
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@codemirror/commands": "^6.1.0",
@@ -17,9 +17,9 @@
     "@codemirror/view": "^6.38.0",
     "codemirror": "^6.0.2",
     "lucide-react": "^0.525.0",
-    "next": "15.3.5",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "next": "^15.3.5",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
     "react-icons": "^5.5.0",
     "react-router-dom": "^7.6.3",
     "vendor": "^1.7.0"
