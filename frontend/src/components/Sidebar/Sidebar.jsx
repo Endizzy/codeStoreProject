@@ -13,13 +13,13 @@ import { LogOut } from 'lucide-react';
 export default function Sidebar() {
     return (
         <aside className={styles.sidebar}>
-            <Link href="/frontend/public">
+            <Link href="/">
                 <h1 className={styles.logo}>CODELAB</h1>
             </Link>
             <p className={styles.subtitle}>Post a code to get featured...</p>
             <nav className={styles.nav}>
                 <hr className={styles.line}/>
-                <Link href="/frontend/public"><House size={16}/> Home</Link>
+                <Link href="/"><House size={16}/> Home</Link>
                 <Link href="/Dashboard"><LayoutDashboard size={16} /> Dashboard</Link>
                 <Link href="/frontend/public"><Plus size={16} /> Post a Code</Link>
                 <Link href="/frontend/public"><Folder size={16} /> My Codes</Link>

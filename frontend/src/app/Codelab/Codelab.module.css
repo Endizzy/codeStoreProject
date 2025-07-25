@@ -96,7 +96,7 @@
     background: rgba(255, 255, 255, 0.02);
     max-width: 800px;
     border-radius: 20px;
-    padding: 2px;
+    padding: 5px 20px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -154,4 +154,18 @@
     background: linear-gradient(135deg, #fbc02d, #f57f17);
     transform: translateY(-2px);
     cursor: default;
+}
+
+@media (max-width: 932px) {
+    .contact__title{
+        font-size: 16px;
+    }
+
+    .contact__desc {
+        font-size: 12px;
+    }
+    .contact__button {
+        padding: 12px 15px;
+        font-size: 12px;
+    }
 }
