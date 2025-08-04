@@ -1,1 +1,1 @@
-https://code-store-project.vercel.app/
+https://codelab-frontend-production.up.railway.app/
